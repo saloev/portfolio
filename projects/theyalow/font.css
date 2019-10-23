@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-Italic.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-Italic.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSansLight-Italic.woff2") format("woff2"),
+    url("./assets/fonts/OpenSansLight-Italic.woff") format("woff"),
+    url("./assets/fonts/OpenSansLight-Italic.ttf") format("truetype");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-Light.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-Light.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-Bold.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-SemiboldItalic.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-SemiboldItalic.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-SemiboldItalic.ttf") format("truetype");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-Semibold.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-Semibold.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-Semibold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans.woff") format("woff"), 
+    url("./assets/fonts/OpenSans/OpenSans.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-ExtraboldItalic.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-ExtraboldItalic.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-ExtraboldItalic.ttf") format("truetype");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-Extrabold.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-Extrabold.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-Extrabold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: url("./assets/fonts/OpenSans/OpenSans-BoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/OpenSans/OpenSans-BoldItalic.woff") format("woff"),
+    url("./assets/fonts/OpenSans/OpenSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Asap Symbol";
+  src: url("./assets/fonts/Asap/Asap-Symbol.woff2") format("woff2"),
+    url("./assets/fonts/Asap/Asap-Symbol.woff") format("woff"),
+    url("./assets/fonts/Asap/Asap-Symbol.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("./assets/fonts/Asap/Asap-Regular.woff2") format("woff2"),
+    url("./assets/fonts/Asap/Asap-Regular.woff") format("woff"),
+    url("./assets/fonts/Asap/Asap-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("./assets/fonts/Asap/Asap-BoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/Asap/Asap-BoldItalic.woff") format("woff"),
+    url("./assets/fonts/Asap/Asap-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("./assets/fonts/Asap/Asap-MediumItalic.woff2") format("woff2"),
+    url("./assets/fonts/Asap/Asap-MediumItalic.woff") format("woff"),
+    url("./assets/fonts/Asap/Asap-MediumItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("./assets/fonts/Asap/Asap-Medium.woff2") format("woff2"),
+    url("./assets/fonts/Asap/Asap-Medium.woff") format("woff"),
+    url("./assets/fonts/Asap/Asap-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("./assets/fonts/Asap/Asap-Italic.woff2") format("woff2"),
+    url("./assets/fonts/Asap/Asap-Italic.woff") format("woff"),
+    url("./assets/fonts/Asap/Asap-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Asap";
+  src: url("./assets/fonts/Asap/Asap-Bold.woff2") format("woff2"),
+    url("./assets/fonts/Asap/Asap-Bold.woff") format("woff"),
+    url("./assets/fonts/Asap/Asap-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./assets/fonts/PTSans/PTSans-Italic.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-Italic.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url("./assets/fonts/PTSans/PTSans-Caption.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-Caption.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-Caption.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("./assets/fonts/PTSans/PTSans-Narrow.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-Narrow.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-Narrow.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./assets/fonts/PTSans/PTSans-BoldItalic.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-BoldItalic.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-BoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./assets/fonts/PTSans/PTSans-Regular.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-Regular.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Caption";
+  src: url("./assets/fonts/PTSans/PTSans-CaptionBold.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-CaptionBold.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-CaptionBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  src: url("./assets/fonts/PTSans/PTSans-Bold.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-Bold.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Sans Narrow";
+  src: url("./assets/fonts/PTSans/PTSans-NarrowBold.woff2") format("woff2"),
+    url("./assets/fonts/PTSans/PTSans-NarrowBold.woff") format("woff"),
+    url("./assets/fonts/PTSans/PTSans-NarrowBold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Segoe WP";
+  src: url("./assets/fonts/Segoe/SegoeWP-Light.woff2") format("woff2"),
+    url("./assets/fonts/Segoe/SegoeWP-Light.woff") format("woff"),
+    url("./assets/fonts/Segoe/SegoeWP-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
