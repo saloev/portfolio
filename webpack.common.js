@@ -39,7 +39,11 @@ module.exports = {
           {
             loader: "sass-loader",
             options: {
-              implementation: require("node-sass")
+              implementation: require("node-sass"),
+              sassOptions: {
+                // Nested dependancies not loaded @see https://github.com/rails/webpacker/issues/1951
+                includePaths: ["./node_modules"]
+              }
             }
           }
         ]
