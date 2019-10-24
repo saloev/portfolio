@@ -14,6 +14,9 @@ html {
   &--primary {
     background-color: $primary;
   }
+  &--text-color {
+    color: $primary--text;
+  }
 }
 
 .wrapper {
@@ -26,6 +29,17 @@ html {
   padding: 0;
 
   list-style: none;
+}
+
+.btn-reset-default {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background: transparent;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 .sr-only {

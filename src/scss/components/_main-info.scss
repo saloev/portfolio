@@ -1,38 +1,30 @@
 .main-info {
+  position: relative;
   padding: 20px;
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "img"
-    "title"
-    "github"
-    "social";
-
-  grid-gap: 1vw;
-  justify-content: center;
+  grid-row-gap: 40px;
+  // justify-content: center;
+  align-items: center;
+  justify-items: center;
+  grid-template-rows: 30vh repeat(3, minmax(min-content, max-content));
 
   @include media(">tablet") {
-    max-width: 80%;
-    margin: 0 auto;
-    grid-template-columns: 2fr 3fr;
-    grid-template-areas:
-      "img title"
-      "img github"
-      "img social";
   }
 
   &__img {
     // max-width: 20vw;
-    grid-area: img;
+    // grid-area: img;
+    height: 100%;
   }
 
   &__title {
-    grid-area: title;
+    // grid-area: title;
     margin: 0;
     padding-bottom: calc(1vh - 20px);
 
     font-size: 5vw;
     line-height: normal;
+    color: $secondary;
 
     //TODO
     @supports not (font-size: 5vw) {
@@ -40,11 +32,11 @@
   }
 
   &__github {
-    grid-area: github;
+    // grid-area: github;
   }
 
   &__social-list {
-    grid-area: social;
+    // grid-area: social;
     display: grid;
     grid-gap: 2vw;
 
@@ -57,5 +49,13 @@
   &__title,
   &__github {
     align-self: center;
+  }
+
+  &__scroll-icon {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+
+    // transform: translateX(20%);
   }
 }

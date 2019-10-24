@@ -4,5 +4,46 @@
   &--icon {
     width: 5vw;
     height: auto;
+
+    svg {
+      fill: $secondary;
+      transition: 0.3s ease-in-out fill;
+    }
+
+    &-vk {
+      &:hover,
+      &:focus {
+        svg {
+          fill: $vk-color;
+        }
+      }
+    }
+
+    &-facebook {
+      &:hover,
+      &:focus {
+        svg {
+          fill: $facebook-color;
+        }
+      }
+    }
+
+    &-twitter {
+      &:hover,
+      &:focus {
+        svg {
+          fill: $twitter-color;
+        }
+      }
+    }
+
+    &-github {
+      &:hover,
+      &:focus {
+        svg {
+          fill: $github-color;
+        }
+      }
+    }
   }
 }

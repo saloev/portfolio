@@ -1,0 +1,10 @@
+.scroll-down-icon {
+  width: 15vw;
+  height: 15vh;
+
+  fill: $secondary;
+
+  &--animate {
+    animation: scroll-down 3s ease-in-out infinite;
+  }
+}
