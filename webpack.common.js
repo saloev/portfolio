@@ -13,6 +13,11 @@ module.exports = {
       assets: path.resolve(__dirname, "src/assets/")
     }
   },
+  resolve: {
+    alias: {
+      assets: path.resolve(__dirname, "src/assets/")
+    }
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: "main.css"
