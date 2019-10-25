@@ -1,0 +1,66 @@
+.expansion-panel {
+  overflow: hidden;
+  border: 1px solid $secondary--dark;
+
+  color: $secondary;
+
+  background-color: $primary--text;
+  border-radius: 5px;
+
+  & .expansion-panel {
+    border: 0;
+    border-radius: 0;
+
+    &__toggle-btn {
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+      margin-bottom: -1px;
+    }
+  }
+
+  &__toggle-btn {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: -1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $secondary--dark;
+
+    font-size: 2vw;
+    text-align: left;
+    color: $primary--text;
+
+    background-color: $secondary;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+
+    &::after {
+      content: "";
+
+      display: inline-block;
+      width: 5vw;
+      height: 5vh;
+
+      background: url($assets+"/arrow.svg") no-repeat center center;
+      background-size: contain;
+    }
+  }
+
+  &__toggle-content {
+    // padding: 1%;
+    margin: 0;
+    height: auto;
+    max-height: 0;
+    overflow: hidden;
+
+    transition: 0.3s linear max-height;
+
+    &.open {
+      max-height: 99999px;
+    }
+  }
+}
