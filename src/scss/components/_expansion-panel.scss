@@ -7,6 +7,10 @@
   background-color: $primary--text;
   border-radius: 5px;
 
+  &__parent {
+    background: transparent;
+  }
+
   & .expansion-panel {
     border: 0;
     border-radius: 0;
@@ -26,12 +30,15 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid $secondary--dark;
+    outline: none;
 
     font-size: 2vw;
     text-align: left;
     color: $primary--text;
 
     background-color: $secondary;
+
+    transition: 0.3s opacity linear;
 
     &:hover,
     &:focus {
@@ -44,23 +51,65 @@
       display: inline-block;
       width: 5vw;
       height: 5vh;
+      outline: 0;
 
       background: url($assets+"/arrow.svg") no-repeat center center;
       background-size: contain;
+
+      transform: rotate(0);
+
+      transition: 0.3s transform linear;
+    }
+
+    &.show-content::after {
+      transform: rotate(180deg);
     }
   }
 
   &__toggle-content {
-    // padding: 1%;
     margin: 0;
-    height: auto;
-    max-height: 0;
     overflow: hidden;
+    height: 0px;
+    opacity: 0;
 
-    transition: 0.3s linear max-height;
+    font-size: 2vw;
+    line-height: 1.1;
+
+    transition: opacity 0.3s linear;
 
     &.open {
-      max-height: 99999px;
+      height: auto;
+      opacity: 1;
     }
+
+    p {
+      margin: 0;
+    }
+
+    a {
+      width: fit-content;
+      border-bottom: 10px dashed transparent;
+
+      font-style: italic;
+      color: $primary--dark;
+      text-transform: uppercase;
+      text-decoration: none;
+
+      transition: 0.3s linear border;
+
+      &:hover,
+      &:focus {
+        border-bottom-color: $primary--dark;
+      }
+    }
+  }
+
+  &__item {
+  }
+}
+
+section.expansion-panel__toggle-content {
+  &.open {
+    padding: 1%;
   }
 }

@@ -1,5 +1,7 @@
 .link {
-  display: block;
+  &--block {
+    display: block;
+  }
 
   &--icon {
     width: 5vw;
