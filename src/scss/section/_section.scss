@@ -1,0 +1,39 @@
+@import "main-info";
+@import "projects";
+
+.section {
+  &--full-height {
+    min-height: 100vh;
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    font-size: 5vw;
+    line-height: 1.2;
+    color: $secondary;
+  }
+
+  &__projects {
+    &-slider {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+
+    &-btn {
+      position: absolute;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      &--next {
+        left: -20%;
+      }
+
+      &--prev {
+        right: -20%;
+      }
+    }
+  }
+}

@@ -1,0 +1,164 @@
+.project {
+  &-content {
+    display: grid;
+
+    @include media(">=tablet") {
+      grid-template-columns: 1fr 2fr;
+    }
+
+    border: 2px solid $secondary--light;
+
+    background: $primary--text;
+    border-radius: 2px;
+
+    &__btn {
+      justify-self: end;
+      padding: 5px;
+      margin: 15px;
+      border: 2px solid $secondary;
+
+      border-radius: 2px;
+    }
+
+    &__title {
+      margin: 0;
+
+      font-size: 2vw;
+      line-height: 1.2;
+    }
+
+    &__info {
+      @include media("<tablet") {
+        display: none;
+      }
+
+      display: flex;
+      align-items: center;
+
+      font-size: 1.5vw;
+      line-height: 1.2;
+
+      &-icon {
+        width: 1em;
+        height: 1em;
+
+        margin-left: 1em;
+
+        transform: rotate(-90deg);
+      }
+
+      &-mobile {
+        text-align: center;
+        color: $secondary;
+        @include media(">=tablet") {
+          display: none;
+        }
+      }
+    }
+
+    &__content {
+      @include media("<tablet") {
+        display: none;
+
+        &.show-desc {
+          display: block;
+        }
+      }
+
+      padding: 5%;
+
+      background: $secondary;
+    }
+
+    &__describe {
+      margin: 5vh 0;
+      padding: 0;
+
+      font-size: 1.5vw;
+      line-height: 1.2;
+    }
+
+    &__link {
+      padding-top: 50%;
+
+      background: url($assets+"/theyalow.jpg") no-repeat center center/cover;
+
+      &--repair-design {
+        background-image: url($assets+"/repair-design-project.png");
+      }
+
+      @include media("<tablet") {
+        border: 2px solid $secondary;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+
+  &-list {
+    &__item {
+      position: relative;
+      padding-left: 1em;
+
+      &::before {
+        position: absolute;
+        left: 5px;
+        top: 50%;
+
+        display: block;
+        width: 0.5em;
+        height: 0.5em;
+        border-radius: 50%;
+
+        background: $primary--text;
+
+        transform: translateY(-50%);
+
+        content: "";
+      }
+    }
+  }
+}
+
+.projects {
+  &__slider {
+    position: relative;
+
+    &:hover &-btn {
+      opacity: 1;
+    }
+
+    &-toggle-btn {
+      @include media(">=tablet") {
+        display: none;
+      }
+    }
+
+    &-btn {
+      @include media("<tablet") {
+        display: none;
+      }
+
+      position: absolute;
+      top: 50%;
+
+      width: 2.5vw;
+
+      opacity: 0;
+
+      transform: translateY(-50%);
+
+      transition: 0.3s linear opacity 0.1s;
+
+      &--next {
+        right: 0%;
+        transform: rotate(-90deg) translateY(-50%);
+      }
+
+      &--prev {
+        left: 0%;
+        transform: rotate(90deg) translateY(-50%);
+      }
+    }
+  }
+}

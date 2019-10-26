@@ -1,6 +1,12 @@
 import "./scss/main.scss";
 
-import { ExpansionPanel, Scroll } from "./js/components/components";
+import Glide from "@glidejs/glide";
+
+import {
+  ExpansionPanel,
+  Scroll,
+  ToggleContent
+} from "./js/components/components";
 
 const expansionPanel = () => {
   const newCollapse = new ExpansionPanel({
@@ -12,9 +18,28 @@ const expansionPanel = () => {
   newCollapse.init();
 };
 
+const slider = () => {
+  new Glide(".glide").mount();
+};
+
+const toggleSliderContent = () => {
+  const newToggleContent = new ToggleContent(
+    ".project-content__content",
+    ".project-content__btn"
+  );
+
+  newToggleContent.init();
+};
+
 const init = () => {
   //
   expansionPanel();
+
+  //slider
+  slider();
+
+  // toggle content
+  toggleSliderContent();
 };
 
 window.addEventListener("DOMContentLoaded", init);

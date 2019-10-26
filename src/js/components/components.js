@@ -1,4 +1,5 @@
 import ExpansionPanel from "./ExpansionPanel";
 import Scroll from "./Scroll";
+import ToggleContent from "./ToggleContent";
 
-export { ExpansionPanel, Scroll };
+export { ExpansionPanel, Scroll, ToggleContent };

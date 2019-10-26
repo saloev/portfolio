@@ -45,7 +45,6 @@
     "webpack-merge": "^4.2.2"
   },
   "dependencies": {
-    "@glidejs/glide": "^3.4.1",
-    "@material/typography": "^3.1.0"
+    "@glidejs/glide": "^3.4.1"
   }
 }
