@@ -32,6 +32,10 @@
         display: none;
       }
 
+      position: absolute;
+      bottom: 5%;
+      left: 5%;
+
       display: flex;
       align-items: center;
 
@@ -57,6 +61,7 @@
     }
 
     &__content {
+      position: relative;
       @include media("<tablet") {
         display: none;
 
@@ -135,6 +140,7 @@
     }
 
     &-btn {
+      z-index: 10;
       @include media("<tablet") {
         display: none;
       }

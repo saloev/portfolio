@@ -23,17 +23,12 @@ export default class IframeModal {
     }
   }
 
-  setIframeSizes(iframe) {
-    iframe.style.width = `${this.width}px`;
-    iframe.style.height = `${this.height}px`;
-  }
-
   changeIframeView = () => {
     const isMobile = this.iframe.classList.toggle("mobile");
     const newText = isMobile ? "show desktop" : "show mobile";
     console.log(newText, this.iframe.innerText);
 
-    this.iframe.innerText = newText;
+    this.iframe.textContent = newText;
   };
 
   closeModal = e => {
@@ -47,6 +42,7 @@ export default class IframeModal {
     }
 
     body.classList.toggle("hide-scroll");
+    this.iframe.classList.remove("mobile");
     this.iframeLoader.classList.remove("off");
 
     getIframe.classList.remove("show");

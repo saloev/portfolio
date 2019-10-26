@@ -1,10 +1,9 @@
 import "./scss/main.scss";
 
-import Glide from "@glidejs/glide";
+import Swiper from "swiper";
 
 import {
   ExpansionPanel,
-  Scroll,
   ToggleContent,
   IframeModal
 } from "./js/components/components";
@@ -20,7 +19,21 @@ const expansionPanel = () => {
 };
 
 const slider = () => {
-  new Glide(".glide").mount();
+  new Swiper(".swiper-container", {
+    noSwiping: false,
+
+    breakpoints: {
+      768: {
+        loop: true,
+        noSwiping: true,
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        }
+      }
+    }
+  });
 };
 
 const toggleSliderContent = () => {

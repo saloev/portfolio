@@ -4,8 +4,10 @@
   height: 100%;
   border: 0;
 
+  overflow-x: hidden;
+
   &.mobile {
-    width: 320px;
+    width: 375px;
     margin: 0 auto;
   }
 
