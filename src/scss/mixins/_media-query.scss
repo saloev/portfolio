@@ -1,3 +1,5 @@
 // @see https://include-media.com/
-@import '~include-media/dist/include-media';
-$breakpoints: (phone: 320px, tablet: 768px, laptop: 1024px, desktop: 1240px, desktop-large: 1440px);
+@import "~include-media/dist/include-media";
+$breakpoints: (
+  tablet: 768px
+);
