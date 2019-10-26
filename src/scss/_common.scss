@@ -19,6 +19,10 @@ html {
   &--text-color {
     color: $primary--text;
   }
+
+  &.hide-scroll {
+    overflow: hidden;
+  }
 }
 
 .wrapper {

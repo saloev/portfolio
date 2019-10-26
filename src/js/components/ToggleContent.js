@@ -14,6 +14,8 @@ export default class ToggleContent {
     document.querySelectorAll(`${this.toggleElem}`).forEach(elem => {
       elem.removeEventListener("click", this.toggleContent);
     });
+    this.content = null;
+    this.toggleElem = null;
   }
 
   toggleContent = e => {

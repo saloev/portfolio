@@ -5,7 +5,8 @@ import Glide from "@glidejs/glide";
 import {
   ExpansionPanel,
   Scroll,
-  ToggleContent
+  ToggleContent,
+  IframeModal
 } from "./js/components/components";
 
 const expansionPanel = () => {
@@ -31,6 +32,12 @@ const toggleSliderContent = () => {
   newToggleContent.init();
 };
 
+const Iframe = () => {
+  const newIframe = new IframeModal(".project-content__link");
+
+  newIframe.init();
+};
+
 const init = () => {
   //
   expansionPanel();
@@ -40,6 +47,9 @@ const init = () => {
 
   // toggle content
   toggleSliderContent();
+
+  //
+  Iframe();
 };
 
 window.addEventListener("DOMContentLoaded", init);
