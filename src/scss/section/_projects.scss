@@ -25,6 +25,10 @@
 
       font-size: 2vw;
       line-height: 1.2;
+
+      @include media("<tablet") {
+        font-size: 5vw;
+      }
     }
 
     &__info {
@@ -81,6 +85,10 @@
 
       font-size: 1.5vw;
       line-height: 1.2;
+
+      @include media("<tablet") {
+        font-size: 5vw;
+      }
     }
 
     &__link {
@@ -93,6 +101,8 @@
       }
 
       @include media("<tablet") {
+        padding-top: 75%;
+
         border: 2px solid $secondary;
         border-left: 0;
         border-right: 0;

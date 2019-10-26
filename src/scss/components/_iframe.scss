@@ -68,6 +68,13 @@
     height: 3vw;
 
     border-radius: 50%;
+
+    @include media("<tablet") {
+      width: 10vw;
+      height: 10vw;
+
+      font-size: 5vw;
+    }
   }
 
   &__toggle-view-btn {
