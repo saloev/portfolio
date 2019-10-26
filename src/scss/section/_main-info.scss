@@ -26,23 +26,22 @@
     line-height: normal;
     color: $secondary;
 
+    @include media("<tablet") {
+      font-size: 10vw;
+    }
+
     //TODO
     @supports not (font-size: 5vw) {
     }
   }
 
   &__github {
-    // grid-area: github;
   }
 
   &__social-list {
-    // grid-area: social;
     display: grid;
     grid-gap: 2vw;
-
-    @include media(">tablet") {
-      grid-template-columns: repeat(3, fit-content(100px));
-    }
+    grid-template-columns: repeat(3, fit-content(100px));
   }
 
   &__social-list,

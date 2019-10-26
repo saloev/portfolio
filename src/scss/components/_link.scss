@@ -7,6 +7,10 @@
     width: 5vw;
     height: auto;
 
+    @include media("<tablet") {
+      width: 10vw;
+    }
+
     svg {
       fill: $secondary;
       transition: 0.3s ease-in-out fill;
